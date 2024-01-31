@@ -41,5 +41,7 @@ public class CantidadFacturasCliente {
 		return "CantidadFacturasCliente [codigo_cliente=" + codigo_cliente + ", nombre=" + nombre
 				+ ", cantidad_facturas=" + cantidad_facturas + "]";
 	}
+	
+	
 
 }

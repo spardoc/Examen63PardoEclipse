@@ -57,9 +57,5 @@ public class GestionClientes
 	{
 		return daoCliente.getAll();
 	}
-	
-	public void transferir(Transferencia transferencia) 
-	{
-		
-	}
+
 }
