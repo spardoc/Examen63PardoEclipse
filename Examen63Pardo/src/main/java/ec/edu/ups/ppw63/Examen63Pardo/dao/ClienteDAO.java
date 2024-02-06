@@ -43,11 +43,11 @@ public class ClienteDAO
 		return q.getResultList();
 	}
 	
-	public Cliente getClientePorCedula(String cedula) 
+	public Cliente getClientePorNumeroTelefono(String numero) 
 	{
-		String jpql = "SELECT c FROM Cliente c WHERE c.dni = :cedula"; //Sentencias a las entidades
+		String jpql = "SELECT c FROM Cliente c WHERE c.numero_Telefono = :numero"; //Sentencias a las entidades
 		Query q = em.createQuery(jpql, Cliente.class);
-		q.setParameter("cedula", cedula);
+		q.setParameter("numero", numero);
 		List<Cliente> clientes = q.getResultList();
 		if(clientes.size() > 0) 
 		{

@@ -39,13 +39,13 @@ public class GestionClientes
 		}
 	}
 	
-	public Cliente getClientePorCedula(String cedula) throws Exception 
+	public Cliente getClientePorNumeroTelefono(String numero) throws Exception 
 	{
-		if(cedula.length() != 10) 
+		if(numero.length() != 10) 
 		{
-			throw new Exception("Cedula incorrecta");
+			throw new Exception("Numero incorrecto");
 		}
-		return daoCliente.getClientePorCedula(cedula);
+		return daoCliente.getClientePorNumeroTelefono(numero);
 	}
 	
 	public void borrarCliente(int codigo) 
