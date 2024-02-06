@@ -41,10 +41,6 @@ public class GestionClientes
 	
 	public Cliente getClientePorNumeroTelefono(String numero) throws Exception 
 	{
-		if(numero.length() != 10) 
-		{
-			throw new Exception("Numero incorrecto");
-		}
 		return daoCliente.getClientePorNumeroTelefono(numero);
 	}
 	

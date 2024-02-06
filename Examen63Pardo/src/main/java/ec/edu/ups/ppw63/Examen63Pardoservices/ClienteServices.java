@@ -87,6 +87,7 @@ public class ClienteServices
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response obtenerClientePorNumeroTelefono(@PathParam("numero_Telefono") String numeroTelefono) 
 	{
+		System.out.println(numeroTelefono);
 	    try 
 	    {
 	        Cliente cli = gClientes.getClientePorNumeroTelefono(numeroTelefono);

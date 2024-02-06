@@ -45,7 +45,7 @@ public class ClienteDAO
 	
 	public Cliente getClientePorNumeroTelefono(String numero) 
 	{
-		String jpql = "SELECT c FROM Cliente c WHERE c.numero_Telefono = :numero"; //Sentencias a las entidades
+		String jpql = "SELECT c FROM Cliente c WHERE c.numeroTelefono = :numero"; //Sentencias a las entidades
 		Query q = em.createQuery(jpql, Cliente.class);
 		q.setParameter("numero", numero);
 		List<Cliente> clientes = q.getResultList();
